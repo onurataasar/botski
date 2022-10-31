@@ -6,7 +6,8 @@ const {
   PermissionsBitField,
   Permissions,
 } = require(`discord.js`);
-
+const axios = require("axios");
+var kelime = require("rastgelekelime");
 const prefix = "dinoli ";
 
 const client = new Client({
@@ -35,8 +36,13 @@ client.on("messageCreate", (message) => {
 
   //commands
 
-  if (command === "bağır") {
-    message.channel.send("AAAAAAAAAAAAAAAAA");
+  switch (command) {
+    case "bağır":
+      message.channel.send("AAAAAAAAAAAAAAAAA");
+      break;
+    case "konuş":
+      message.channel.send(kelime());
+      break;
   }
 });
 
