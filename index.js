@@ -43,6 +43,12 @@ client.on("messageCreate", (message) => {
     case "konuş":
       message.channel.send(kelime());
       break;
+    case "miyavla":
+      message.channel.send("MİYAAAAAVVVVVV");
+      break;
+    case "boş":
+      message.channel.send("çok boş yapmamak lazım");
+      break;
   }
 });
 

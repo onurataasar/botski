@@ -26,6 +26,7 @@
     "discord.js": "^14.6.0",
     "dotenv": "^16.0.3",
     "events": "^3.3.0",
+    "pm2": "^5.2.2",
     "rastgelekelime": "^2.0.2"
   }
 }
